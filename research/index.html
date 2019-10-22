@@ -2,6 +2,10 @@
 <html lang="en">
 
   <head>
+
+    <!-- Google Analytics -->
+    <script async src="../lib/gascript.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Wooyong Lee</title>
+
   </head>
 
   <body>
@@ -21,44 +26,71 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #860000;">
 
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="../"> <i class="material-icons">home</i> Home</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link font-weight-bold" href="#"> <i class="material-icons">search</i> Research <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="../computing/"> <i class="material-icons">dns</i> Computing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="../cv/"> <i class="material-icons">description</i> CV</a>
-              </li>
-            </ul>
-          </div>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="../"> <i class="material-icons">home</i> Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold" href="#"> <i class="material-icons">search</i> Research <span class="sr-only">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="../computing/"> <i class="material-icons">dns</i> Computing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="../cv/"> <i class="material-icons">description</i> CV</a>
+            </li>
+          </ul>
+        </div>
 
       </nav>
 
       <div class="row justify-content-center">
         <div class="col-10">
           <br>
-          <!--
           <p>
-            <h3>Working papers</h3>
-            Description
+
+            <h3>Job Market Paper</h3>
+
+            <div class="list-group">
+
+              <li class="list-group-item flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"> Identification and estimation of average effects in dynamic random coefficient models </h5>
+                </div>
+                <p class="mb-1">In empirical research, there is ample evidence and reasoning on why the parameter of interest itself
+                  is heterogeneous across individuals. This paper studies a linear panel data model where its
+                  coefficients are heterogeneous, called a random coefficient model. I show that the model is partially
+                  identified in the presence of sequentially exogenous regressors such as lagged outcome, and the
+                  bounds of parameters of interest such as mean, variance or distribution of the coefficients are
+                  characterized using duality principle of linear programming. To compute the bounds, I propose a
+                  computation method that is much faster than general methods in Galichon and Henry (2013) and
+                  Schennach (2014), which exploits the linear structure and uses a fast algorithm for global
+                  optimization of polynomials. The method is applied to life-cycle earnings and consumption
+                  dynamics, which provides evidence on large heterogeneity in consumption response to earnings
+                  shocks. A structural life-cycle model is calibrated in order to explain the evidence.
+                </p>
+                <div class="btn btn-primary" onclick="openLink('paper_jmp')">Download paper</div>
+              </li>
+
+            </div>
+
           </p>
-          <br>
+
           <p>
-            <h3>Publications</h3>
-            Description
+
+            <h3>Work in Progress</h3>
+
+            <div class="list-group">
+              
+            </div>
+
           </p>
-          -->
         </div>
       </div>
 
@@ -69,5 +101,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- javascript for the page -->
+    <script src="../lib/links.js"></script>
   </body>
 </html>

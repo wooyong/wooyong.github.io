@@ -2,6 +2,10 @@
 <html lang="en">
 
   <head>
+
+    <!-- Google Analytics -->
+    <script async src="./lib/gascript.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Wooyong Lee</title>
+
   </head>
 
   <body>
@@ -21,62 +26,65 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #860000;">
 
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item active">
-                <a class="nav-link font-weight-bold" href="#"> <i class="material-icons">home</i> Home <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="./research/"> <i class="material-icons">search</i> Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="./computing/"> <i class="material-icons">dns</i> Computing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="./cv/"> <i class="material-icons">description</i> CV</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link font-weight-bold" href="#"> <i class="material-icons">home</i> Home <span class="sr-only">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="./research/"> <i class="material-icons">search</i> Research </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="./computing/"> <i class="material-icons">dns</i> Computing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="./cv/"> <i class="material-icons">description</i> CV </a>
+            </li>
+          </ul>
+        </div>
 
       </nav>
 
       <div class="container">
 
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <br>
-          <h1 class="display-4">Wooyong Lee</h1>
-          <br>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <br>
+            <h1 class="display-4">Wooyong Lee</h1>
+            <br>
+          </div>
         </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <p>
-            I am a PhD candidate in Economics at the University of Chicago.
-          </p>
-          <p>
-            <h4>Research interests</h4>
-            Econometrics (Primary) <br>
-            Labor Economics
-          </p>
-          <p>
-            <h4>Contact</h4>
-            wooyong [at] uchicago [dot] edu
-          </p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <p>
+              I am a PhD candidate in Economics at the University of Chicago.
+            </p>
+            <p>
+              <h4>Research interests</h4>
+              Econometrics (Primary) <br>
+              Labor Economics
+            </p>
+            <p>
+              <h4>Contact</h4>
+              wooyong [at] uchicago [dot] edu
+            </p>
+            <p>
+              <div class="btn btn-primary" onclick="openLink('cv')">Download CV</div>
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="pic.png" class="rounded img-fluid">
+          </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <img src="pic.png" class="rounded img-fluid">
-        </div>
-      </div>
 
-    </div>
+      </div>
 
     </div>
 
@@ -85,5 +93,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- javascript for the page -->
+    <script src="./lib/links.js"></script>
   </body>
 </html>
