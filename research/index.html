@@ -63,7 +63,7 @@
                 <div class="d-flex w-100 justify-content-between">
                   <a class="h5 mb-1 text-primary" href="javascript:openLink('paper_jmp');"> Identification and estimation of average effects in dynamic random coefficient models </a>
                 </div>
-                <p class="mb-1">Dynamic fixed effect models are popular in empirical research. However, they allow for unobserved heterogeneity only in the intercept but not in the coefficients, although the coefficients can be important parameters such as Cobb-Douglas coefficients of firm's production function or return to education in Mincer equation. This paper studies a dynamic fixed effect model where both its intercept and coefficients are heterogeneous, called a dynamic random coefficient model. It is shown that the model is partially identified when the length of panel data is fixed, and the sharp identified set of the model is characterized. The characterization does not require any support restriction. A computationally feasible estimation and inference procedure based on fast and exact global polynomial optimization algorithm is proposed. The method is applied to life-cycle earnings and consumption dynamics using Panel Study of Income Dynamics (PSID) dataset. The estimates suggest that there is large heterogeneity in earnings persistence and earnings elasticity of consumption across households and that there is strong correlation between the two. Calibration of structural life-cycle model is performed to make sense of the estimation results.
+                <p class="mb-1"> Dynamic fixed effect models are popular in empirical research. However, they allow for unobserved heterogeneity only in the intercept but not in the coefficients, although the coefficients can be important parameters such as Cobb-Douglas coefficients of firm's production function or return to education in Mincer equation. This paper studies a dynamic fixed effect model where both its intercept and coefficients are heterogeneous, called a dynamic random coefficient model. It is shown that the model is partially identified when the length of panel data is fixed, and the sharp identified set of the model is characterized. The characterization does not require any support restriction. A computationally feasible estimation and inference procedure based on fast and exact global polynomial optimization algorithm is proposed. The method is applied to life-cycle earnings and consumption dynamics using Panel Study of Income Dynamics (PSID) dataset. The estimates suggest that there is large heterogeneity in earnings persistence and earnings elasticity of consumption across households and that there is strong correlation between the two. Calibration of structural life-cycle model is performed to make sense of the estimation results.
                 </p>
               </li>
 
@@ -71,23 +71,35 @@
 
           </p>
 
-          <!--
-
           <p>
 
             <h3>Work in Progress</h3>
 
             <div class="list-group">
-              
+
+              <li class="list-group-item flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <a class="h5 mb-1"> Global optimization algorithm for interactive fixed effects models </a>
+                </div>
+                <p class="mb-1"> Interactive fixed effects models are panel data models that allow individual and time fixed effects to appear multiplicatively, which generalizes differences-in-differences (DID) models frequently used in empirical research. A serious computational challenge faced by interactive fixed effects models is that the least squares estimator requires a researcher to globally minimize a non-convex objective due to the fixed effects entering multiplicatively. The challenge requires the researcher to minimize the least squares criterion with multiple starting values, and yet the researcher is not convinced of its global optimality. This paper proposes an estimation algorithm for interactive fixed effects models that globally minimize the least squares criterion. The algorithm does not depend on the starting value and, more importantly, provide certificate of global optimality for the least squares estimator.
+                </p>
+              </li>
+
+              <li class="list-group-item flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <a class="h5 mb-1"> Identification and estimation of binary choice models with heterogeneous state dependence and partial effects </a>
+                </div>
+                <p class="mb-1"> Panel data binary choice models allow researchers to account for heterogeneity in their binary decisions, such as household's decision to supply female labor in the labor market. The literature about the model mainly focused on binary models with heterogeneity in levels, which means that it does not capture heterogeneity in the state dependence and partial effect of regressors such as household's willingness to maintain their decision over time or to change their decision in response to exogenous shocks and policies. This paper studies a binary choice model that allows heterogeneity in state dependence and partial effect of regressors. The identified sets of causal parameters such as average marginal effects are characterized, and an estimation method for the identified sets are proposed. The estimation method allows for continuous regressors.
+                </p>
+              </li>
+
             </div>
 
           </p>
 
-          -->
-
           <p>
 
-            <h3>Pre-PhD Publication</h3>
+            <h3>Publication</h3>
 
             <div class="list-group">
 
@@ -96,6 +108,8 @@
                   <a class="h5 mb-1 text-primary" href="javascript:openLink('paper_prephd');"> Pre-averaged kernel estimators for the drift function of a diffusion process in the presence of microstructure noise (with Priscilla E. Greenwood, Nancy Heckman and Wolfgang Wefelmeyer) </a>
                 </div>
                 <p class="mb-1">Statistical Inference for Stochastic Processes, 2017, 20 (2):237–252.
+                </p>
+                <p class="mb-1"> We consider estimation of the drift function of a stationary diffusion process when we observe high-frequency data with microstructure noise over a long time interval. We propose to estimate the drift function at a point by a Nadaraya–Watson estimator that uses observations that have been pre-averaged to reduce the noise. We give conditions under which our estimator is consistent and asympotically normal. Its rate and asymptotic bias and variance are the same as those without microstructure noise. To use our method in data analysis, we propose a data-based cross-validation method to determine the bandwidth in the Nadaraya–Watson estimator. Via simulation, we study several methods of bandwidth choices, and compare our estimator to several existing estimators. In terms of mean squared error, our new estimator outperforms existing estimators.
                 </p>
               </li>
               
