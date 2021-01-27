@@ -1,0 +1,439 @@
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2020 Jason R. Blevins <jblevins@xbeta.org>
+% https://jblevins.org/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt,letterpaper]{article}
+
+% Set your name here
+\def\name{Wooyong Lee}
+
+% Load packages
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem} % Enumerate with [resume] option
+\usepackage{sectsty} % Custom section fonts
+
+% Font
+\usepackage{mathpazo}
+
+% Title
+\newcommand{\titlefont}[1]{{\titleface\large\MakeUppercase{#1}}}
+
+% Section Headings
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, econometrics, applied microeconomics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+      \setlength{\itemsep}{0.25em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.25em}
+    }
+}{
+  \end{list}
+}
+\setlist[enumerate]{itemsep=0.25em}
+
+% Print the month and year
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi%
+\space \number \year}
+
+% COVID-19 Cancellations
+\newcommand{\fncovid}{{\footnotesize ${}^{\dagger}$}}
+
+\begin{document}
+
+% Place name at left and date at right
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\titlefont{\name}}
+
+% Date
+\bigskip
+\today
+
+% Contact Information
+\bigskip
+\begin{minipage}[t]{0.495\textwidth}
+  University of Technology Sydney \\
+  Economics Discipline Group \\
+  Dr Chau Chak Wing Building, Building 8 \\
+  14-28 Ultimo Road, Ultimo, NSW 2007 \\
+  Australia
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  \href{https://wooyong.github.io/}{https://wooyong.github.io/} \\
+  \href{mailto:wooyong.lee.econ@gmail.com}{wooyong.lee.econ@gmail.com} \\
+  %(614) 292-5588
+\end{minipage}
+
+\section*{Employment}
+
+\begin{itemize}
+\item Lecturer, Economics Discipline Group, University of Technology Sydney, 2021--present
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+  \item Ph.D. Economics, University of Chicago, Chicago, United States, 2020
+    \begin{itemize}
+    \item Dissertation Title: ``Identification and estimation of dynamic random coefficient models''.
+    \item Committee: St\'ephane Bonhomme (Chair), Alexander Torgovitsky, Guillaume Pouliot.
+    \end{itemize}
+  \item M.Sc. Statistics, University of British Columbia, Vancouver, Canada, 2014
+    \begin{itemize}
+    \item Dissertation Title: ``Pre-averaged kernel estimators for the drift function of a diffusion process in the presence of microstructure noise''.
+    \item Committee: Nancy E. Heckman, Priscilla E. Greenwood.
+    \end{itemize}
+  \item B.A. Economics, Statistics \textit{(Double major)}, Korea University, Seoul, Korea (South), 2012
+\end{itemize}
+
+\section*{Research Interests}
+
+Econometrics (Primary), Applied Microeconomics
+
+\section*{Publications}
+
+\subsection*{Peer-Reviewed Publications}
+
+\begin{enumerate}
+\item
+  Pre-averaged kernel estimators for the drift function of a diffusion process in the presence of microstructure noise. 
+  2016.
+  \textit{Statistical Inference for Stochastic Processes} 1--16.
+  (with Priscilla E. Greenwood, Nancy E. Heckman and Wolfgang Wefelmeyer).
+%\item Blevins, J.~R. and S.~Khan (2013).
+%  \href{https://jblevins.org/research/dfbr/}{Distribution-Free Estimation of Heteroskedastic Binary Response Models in Stata}.
+%  \textit{Stata Journal} 13, 588--602.
+\end{enumerate}
+
+\subsection*{Working Papers}
+
+\begin{enumerate}[resume]
+\item Identification and estimation of dynamic random coefficient models.
+\end{enumerate}
+
+\subsection*{Work in Progress}
+
+\begin{itemize}
+\item Global optimization algorithm for interactive fixed effect models.
+\item Identification and estimation of binary choice models with heterogeneous state dependence and partial effects.
+\end{itemize}
+
+%\subsection*{Scientific Software}
+%
+%\begin{itemize}
+%\item \href{https://github.com/wooyong/optpoly}{optpoly},
+%  An R package for exactly solving global polynomial optimization problems using semidefinite programming (SDP) approach proposed by Lasserre (2001) and Nie et al (2006).
+%\item \href{https://jblevins.org/research/dfbr}{DFBR},
+%  A Stata program for distribution-free estimation of heteroskedastic
+%  binary response models,
+%  with Shakeeb Khan (2009).
+%\end{itemize}
+
+%\section*{Grants and Sponsored Projects}
+
+%\begin{itemize}
+%\item Moulton, S. (PI),
+%  Seligman, J.~S., Haurin, D.~R., Loibl, C., Blevins, J.~R. (Co-PIs).
+%  Aging in Place: Managing the Use of Reverse Mortgages to Enable Housing Stability,
+%  2013--2016.
+%  U.S. Department of Housing and Urban Development (HUD).
+%  \$555,004.
+%\item Blevins, J.~R. and Dearing, A. (co-PIs).
+%  Demand estimation and analysis for products.
+%  Undisclosed corporate sponsor.
+%  \$58,434.
+%\end{itemize}
+
+\section*{Honors, Scholarships, and Fellowships}
+
+\begin{itemize}
+\item Reid Economics Fellowship, 2019--2020.
+\item Social Sciences Fellowship, 2014--2019.
+\item International Partial Tuition Scholarship, 2012--2014.
+\end{itemize}
+
+%\section*{Editorial Service}
+%
+%\begin{itemize}
+%\item Associate Editor, \textit{Economic Inquiry}, 2018--Present.
+%\item Referee for
+%\textit{Econometrica} (3),
+%\textit{Econometric Reviews} (4),
+%\textit{Econometric Theory} (2),
+%\textit{Economic Inquiry} (15),
+%\textit{International Economic Review},
+%\textit{Journal of Applied Econometrics} (3),
+%\textit{Journal of Business and Economic Statistics} (4),
+%\textit{Journal of Computational Finance},
+%\textit{Journal of Economic Dynamics and Control},
+%\textit{Journal of Economic Literature},
+%\textit{Journal of Econometric Methods},
+%\textit{Journal of Econometrics} (17),
+%\textit{Journal of Labor Economics},
+%\textit{Management Science},
+%\textit{Marketing Science},
+%\textit{Operations Research},
+%\textit{RAND Journal of Economics},
+%\textit{Review of Economic Studies} (2),
+%\textit{Review of Economics and Statistics} (2),
+%\textit{Scandinavian Journal of Statistics},
+%\textit{Stata Journal},
+%\textit{Pakistan Journal of Statistics},
+%\textit{Quantitative Economics} (4),
+%Cambridge University Press,
+%National Science Foundation (2),
+%Ohio Supercomputer Center,
+%Polish National Science Centre (2).
+%\end{itemize}
+
+\section*{Invited Seminars}
+
+\begin{description}[font=\mdseries]
+\item[2020]
+  Brown University,
+  Chinese University of Hong Kong,
+  Cornell University,
+  Duke University,
+  Hanyang University,
+  Korea Development Institute,
+  University of Southern California,
+  University of Technology Sydney,
+  Rice University,
+  Toulouse School of Economics.
+\end{description}
+
+\section*{Conference Presentations}
+
+\begin{description}[font=\mdseries]
+\item[2019]
+  Optimization-Conscious Econometrics Conference.
+\end{description}
+
+%\section*{Service to Profession, University, \& Department}
+%
+%\begin{itemize}
+%\item Conference Organization
+%  \begin{itemize}
+%  \item Scientific Committee of the 8th Annual Conference of the International Association of Applied Econometrics (IAAE), Rotterdam, June 22--25, 2021.
+%  \item Scientific Committee of the 7th Annual Conference of the International Association of Applied Econometrics (IAAE), London, June 30--July 3, 2020.\fncovid
+%  \item Local Organizer, \href{https://jblevins.org/pub/meg-2019.pdf}{29th Annual Meeting of the Midwest Econometrics Group (MEG)}, Ohio State University, October 11--12, 2019.
+%  \end{itemize}
+%\item The Ohio State University, Division of Social and Behavioral Sciences
+%  \begin{itemize}
+%  \item Arts and Sciences Curriculum Committee, SBS Panel (2017--20)
+%  \item Ad Hoc Online Course Assurance Review, SBS Curriculum Committee (Summer 2020)
+%  \end{itemize}
+%\item The Ohio State University, Department of Economics
+%  \begin{itemize}
+%  \item Director of Graduate Placement (2018--19, 2019--20)
+%  \item Advisory Committee to the Chair (2017--19)
+%  \item Academic Review Committee (2018--19, 2019--20)
+%  \item Faculty Recruiting Committee (2010--11, 2011--12, 2014--15, 2016--17, 2017--18, 2019--20)
+%  \item Graduate Studies Committee (2012--13, 2018--19, 2019--20)
+%  \item Undergraduate Studies Committee (2014--15)
+%  \item Ad-Hoc Graduate Program Review Committee (2013--14)
+%  \item Econometrics Seminar Organizer (Autumn 2016, Spring 2018, Spring 2019, Autumn 2019)
+%  \item General Education Curriculum Data Science Theme Representative
+%  \item G.S. Maddala Prize Committee (2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019)
+%  \end{itemize}
+%\end{itemize}
+
+%\section*{Professional Memberships}
+%
+%\begin{itemize}
+%\item Econometric Society (2006--Present)
+%\item American Economic Association (2010--Present)
+%\item American Statistical Association (2011--Present)
+%\item International Association for Applied Econometrics (2019--Present)
+%\end{itemize}
+
+%\section*{Advising}
+%
+%\subsection*{Ph.D. Students, as Primary Advisor (Initial Placement in Parentheses)}
+%
+%\begin{itemize}
+%\item \href{http://chaoma2014.weebly.com}{Chao Ma} (2015, Assistant Professor, Xiamen University, WISE, co-advisor with Donald Haurin)
+%\item \href{http://garrettsenney.weebly.com}{Garrett T. Senney} (2016, Financial Economist, Office of the Comptroller of the Currency)
+%\item \href{http://junqiushi-ren.weebly.com}{Junqiushi Ren} (2017, Assistant Professor, Southwestern University of Finance and Economics, RIEM) % Research Institute of Economics and Management
+%\item Minhae Kim
+%\item Daniel Lopez Gomez
+%\end{itemize}
+
+%\subsection*{Ph.D. Students, as Committee Member}
+%
+%\begin{itemize}
+%\item Chih-Sheng Hsieh (2013, Assistant Professor, Chinese University of Hong Kong)
+%\item Chao Yang (2015, Assistant Professor, Shanghai University of Finance and Economics)
+%\item Xingbai Xu (2016, Assistant Professor, Xiamen University, WISE)
+%\item Xiang Hui (2016, Postdoctoral Researcher, MIT Sloan)
+%\item Wei Shi (2016, Assistant Professor, Jinan University Institute for Economic and Social Research)
+%\item Kai Yang (2016, Assistant Professor, Shanghai University of Finance and Economics)
+%\item Jongwook Park (2017, Economist, Bank of Korea)
+%\item Bosung Jang (2017, Economist, Bank of Korea)
+%\item Neslihan Sakarya (2017, Assistant Professor, University of Essex)
+%\item Tuo Liu (2017, Assistant Professor, Xiamen University, WISE)
+%\item Joseph Rossetti (2018, Associate, Matrix Economics)
+%\item Hongyu Chen (2018, Quantitative Analyst, Freddie Mac)
+%\item Hyewon Kim (2018, Senior Quantitative Analyst, Gartner)
+%\item Yun Pu (2018, Assistant Professor, Southwestern University of Finance and Economics, School of Public Finance and Taxation)
+%\item Jon Michel (2019, Data Scientist, Google)
+%\item Hanbat Jeong (2019, Postdoctoral Researcher, Ohio State)
+%\item Yichun Song
+%\item Nayul Kim
+%\item Yang Yang
+%\item Yanli Li
+% Seonghoon Kim; candidacy exam, 2011
+% Fei Jin; candidacy exam, 2011
+% Xi Qu; candidacy exam, 2012
+%\end{itemize}
+
+%\subsection*{Undergraduate Honors Students}
+%
+%\begin{itemize}
+%\item Erik Lauritzen (2011, co-advisor with Jennifer Suchland)
+%\item Rachel Williams (2019, committee member)
+%\end{itemize}
+
+\section*{Teaching}
+
+%\subsection*{The Ohio State University}
+%
+%\begin{itemize}
+%\item Topics in Microeconometrics (Ph.D.):
+%  \href{https://jblevins.org/courses/econ843f11/}{Autumn 2011}, % 5 students, 5 quarter credit hours
+%  \href{https://jblevins.org/courses/econ8833f12/}{Autumn 2012}, % 11 students, 3 semester credit hours
+%  \href{https://jblevins.org/courses/econ8833f14/}{Autumn 2014}, % 12 students, 3 semester credit hours
+%  \href{https://jblevins.org/courses/econ8833f15/}{Autumn 2015}, % 7 students, 3 semester credit hours
+%  \href{https://jblevins.org/courses/econ8833f16/}{Autumn 2016}. % 9 students, 3 semester credit hours
+%\item Advanced Econometrics I (Ph.D.):
+%  \href{https://jblevins.org/courses/econ8830s19/}{Spring 2019}, % 12 students, 3 semester credit hours
+%  \href{https://jblevins.org/courses/econ8830f19/}{Autumn 2019}. % 9 students, 3 semester credit hours
+%\item Econometrics seminar organizer:
+%  Autumn 2016, Spring 2018, Spring 2019.
+%\end{itemize}
+
+\subsection*{University of Chicago}
+
+\begin{itemize}
+\item Topics in Econometrics (graduate), teaching assistant.
+\item Topics in Microeconometrics (undergraduate), teaching assistant.
+\item Applied Microeconometrics (undergraduate), teaching assistant.
+\end{itemize}
+
+\subsection*{University of British Columbia}
+
+\begin{itemize}
+\item Elementary Statistics (undergraduate), teaching assistant.
+\end{itemize}
+
+% \section*{Conference Participation}
+
+% \begin{itemize}
+% \item University of Calgary Empirical Microeconomics Workshop,
+%   Banff, Canada, September 20--21, 2014.
+% \item 12th Annual International Industrial Organization Conference (IIOC),
+%   Chicago, IL, April 11-13, 2014.
+% \item Midwest Economics Association Annual Meeting,
+%   March 21--23, 2014.
+% \item 23rd Annual Meeting of the Midwest Econometrics Group,
+%   Indiana University, Department of Economics,
+%   October 25--26, 2013.
+% \item NBER/NSF/CEME Conference on the Econometrics of Dynamic Games,
+%   New York University, Stern School of Business,
+%   August 10--11, 2012.
+% \item 2012 China India Insights Conference,
+%   Yale University School of Management,
+%   August 2--3, 2012.
+% \item AEA/ASSA Annual Meetings,
+%   Chicago, IL, January 5--8, 2012.
+% \item 2011 Meetings of the Midwest Econometrics Group,
+%   University of Chicago Booth School of Business,
+%   October 6-7, 2011.
+% \item North American Summer Meetings of the Econometric Society,
+%   Washington University,
+%   June 9--12, 2011.
+% \item AEA/ASSA Annual Meetings,
+%   Denver, CO, January 6--10, 2011.
+% \item 20th Annual Meetings of the Midwest Econometrics Group,
+%   Washington University,
+%   October 1--2, 2010.
+% \item AEA/ASSA Annual Meetings,
+%   Atlanta, GA, January 3--5, 2010.
+% \item Triangle Econometrics Conference,
+%   Research Triangle Park, NC,
+%   December 4, 2009.
+% \item Cowles Foundation Conference, Applications of Structural Microeconomics,
+%   Yale University,
+%   June 24--25, 2009.
+% \item ERID Conference on Identification,
+%   Duke University,
+%   October 3--4, 2008.
+% \item North American Summer Meetings of the Econometric Society,
+%   Duke University,
+%   June 21--24, 2007.
+% \item Institute on Computational Economics,
+%   Argonne National Laboratory,
+%   July 17--21, 2006.
+% \item SIAM Conference on Applied Linear Algebra,
+%   The College of William \& Mary,
+%   July 15--19, 2003.
+% \end{itemize}
+
+\section*{Miscellaneous}
+
+\begin{itemize}
+\item \textit{Programming Languages:} R, C++, Stata, \LaTeX.
+\item \textit{Nationality:} Korea, Republic of (South). Permanent resident of Australia.
+\end{itemize}
+
+\vfill
+
+\end{document}
+
+%%% Local Variables: 
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% End: 
